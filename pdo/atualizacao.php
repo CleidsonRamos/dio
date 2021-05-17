@@ -21,9 +21,9 @@ $prepare = $pdo->prepare($sql);
     não pode ser um tipo primitivo como uma string ou número solto, retorno de função/método.
 */
 
-$prepare->bindParam(1, $id);
-$prepare->bindParam(2, $nome);
-$prepare->bindParam(3, $email);
+$prepare->bindParam(1, $nome);
+$prepare->bindParam(2, $email);
+$prepare->bindParam(3, $id);
 
 //executa a instrução SQL
 $prepare->execute();
