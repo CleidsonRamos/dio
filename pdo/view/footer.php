@@ -267,7 +267,7 @@
               $sidebar_img_container.fadeOut('fast');
             }
 
-            if ($full_page_background.length != 0) {
+            if ($full_page_background.length != 0) 
               $full_page.removeAttr('data-image', '#');
               $full_page_background.fadeOut('fast');
             }
@@ -275,7 +275,7 @@
             background_image = false;
           }
         });
-
+//
         $('.switch-sidebar-mini input').change(function() {
           $body = $('body');
 
