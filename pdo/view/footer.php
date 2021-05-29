@@ -275,7 +275,7 @@
             background_image = false;
           }
         });
-//
+        
         $('.switch-sidebar-mini input').change(function() {
           $body = $('body');
 
