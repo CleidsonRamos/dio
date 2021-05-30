@@ -15,5 +15,5 @@ use App\Http\Controllers\Usuario;
 */
 
 
-Route::get('/', [Usuario::class, 'cadastrar']);
-Route::get('/salvar', [Usuario::class, 'salvar']);
+Route::get('/', [Usuario::class, 'cadastrar'])->name('home');
+Route::post('/salvar', [Usuario::class, 'salvar'])->name('salvar'); //name é o apelido, é interessante colocar no caso de ter algum parametro

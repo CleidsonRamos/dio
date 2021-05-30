@@ -14,6 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
+});
+*/
+
+Route::prefix('v1')->group(function(){
+    Route::get('lista', function(){ // get vai listar
+        return ["a","b","c","d"];
+    });
+    
+    Route::post('cadastrar', function(){ //post vai fazer o cadastro
+        echo 'implementar';
+    });
+    
+    
 });
