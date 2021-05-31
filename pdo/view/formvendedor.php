@@ -1,5 +1,8 @@
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Cadastrar
+<button type="button" class="btn btn-primary btn-round" data-toggle="modal" data-target="#exampleModal">
+  Cadastrar &nbsp
+  <span class="material-icons">
+    person_add
+  </span>
 </button>
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -52,7 +55,7 @@
             <div class="form-group">
               <div class="form-check">
                 <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox" value="">
+                  <input class="form-check-input" type="checkbox" value="" checked>
                   Ativado
                   <span class="form-check-sign">
                     <span class="check"></span>
@@ -60,12 +63,21 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Salvar</button>
           </form>
           </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Salvar</button>
+           <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-round" data-dismiss="modal">
+          Fechar  &nbsp
+          <span class="material-icons">
+            close
+            </span>
+        </button>
+        <button type="button" class="btn btn-primary  btn-round">
+          Salvar  &nbsp
+        <span class="material-icons">
+          save
+        </span>
+        </button>
       </div>
     </div>
   </div>
