@@ -63,7 +63,6 @@
                 </label>
               </div>
             </div>
-          </form>
           </div>
            <div class="modal-footer">
         <button type="button" class="btn btn-secondary btn-round" data-dismiss="modal">
@@ -72,12 +71,13 @@
             close
             </span>
         </button>
-        <button type="button" class="btn btn-primary  btn-round">
+        <button type="submit" class="btn btn-primary  btn-round">
           Salvar  &nbsp
         <span class="material-icons">
           save
         </span>
         </button>
+     </form>
       </div>
     </div>
   </div>
