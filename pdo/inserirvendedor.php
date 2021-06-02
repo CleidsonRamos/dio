@@ -11,15 +11,14 @@ $sql = "INSERT INTO iup_vendedor
         (id_unidade, id_empresa, id_centro_de_resultado, id_usuario, nome, email, status, id_local_estoque)
         VALUES(?, ?, ?, ?, ?, ?, ?, ?)";
 
-//variaveis apenas para didatica de inserção o ideal seria fazer um formulario e enviar atraves do $_POST
-$id_unidade = 1;
-$id_empresa = 1;
-$id_centro_de_resultado = 21;
-$id_usuario = 57;
-$nome = 'Fulano';
-$email = 'fulano@teste';
-$status = 1;
-$id_local_estoque = 2;
+$id_unidade = $_POST['id_unidade']; 
+$id_empresa = $_POST['id_empresa']; 
+$id_centro_de_resultado = $_POST['id_centro_de_resultado']; 
+$id_usuario = $_POST['id_usuario']; 
+$nome = $_POST['nome']; 
+$email = $_POST['email']; 
+$status = $_POST['status']; 
+$id_local_estoque =$_POST['id_local_estoque']; 
 
 //prepare evita problemas com SQLInjetion
 $prepare = $pdo->prepare($sql);
@@ -42,4 +41,8 @@ $prepare->bindParam(8, $id_local_estoque);
 $prepare->execute();
 
 //mostra a quantidade de linhas afetadas, no caso 1
-echo $prepare->rowCount();
+//echo $prepare->rowCount();
+
+if ($prepare->rowCount() == 1){
+    header("Location: /dio/pdo/tabela.php");
+}
