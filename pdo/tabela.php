@@ -37,7 +37,17 @@
                       <td><?php echo $row["nome"]; ?></td>
                       <td><?php echo $row["email"]; ?> </td>
                       <td><?php echo $row["status"]; ?> </td>
-                      <td><?php echo $row["id_local_estoque"]; ?> </td>          
+                      <td><?php echo $row["id_local_estoque"]; ?> </td>
+                      <td class="row"> <button type="button" class="btn btn-primary btn-fab btn-fab-mini btn-round" data-toggle="modal" data-target="#modalEditar" data-placement="bottom" title="Editar vendedor(a)">
+                        <span class="material-icons">
+                          edit_note
+                        </span>
+                        </button><button type="button" class="btn btn-warning btn-fab btn-fab-mini btn-round" data-toggle="modal" data-target="#modalDeletar" data-placement="bottom" title="Deletar vendedor(a)">
+                        <span class="material-icons">
+                          delete_forever
+                        </span>
+                      </button> 
+                     </td>
                     </tr>
                   <?php endforeach; ?>
                 </tbody>
@@ -49,3 +59,34 @@
     </div>
   </div>
 </div>
+
+<!-- Modal para deletar-->
+<div class="modal fade" id="modalDeletar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Deletar vendedor(a)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Tem certeza que deseja deletar? </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-danger">
+          Deletar
+          <span class="material-icons">
+              delete
+            </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Fim do modal para deletar-->
+
+<?php
+include 'view/footer.php';
+?>
