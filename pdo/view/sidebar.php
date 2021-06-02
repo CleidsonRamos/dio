@@ -50,7 +50,7 @@
             </div>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
+            <a class="nav-link" href="./dashboard.php">
               <i class="material-icons">dashboard</i>
               <p class=" dropdown-toggle">Dashboard</p>
             </a>
@@ -74,7 +74,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./rtl.html">
+            <a class="nav-link" href="./videos.php">
             <i class="material-icons">play_circle_outline</i>
               <p>Videos Aulas</p>
             </a>
