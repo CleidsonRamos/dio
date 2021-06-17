@@ -1,5 +1,16 @@
+<?php
+      declare(strict_types=1);
 
-      <div class="content">
+      include 'view/head.php';
+      include 'view/sidebar.php';
+
+      //como o connect.php retorna o PDO, então é armazenado na variavel $PDO.
+      $pdo = require 'connect.php';
+
+      $sql = 'SELECT * FROM iup_vendedor';
+?>
+
+<div class="content">
 
 <?php include 'view/formvendedor.php';?>
 
