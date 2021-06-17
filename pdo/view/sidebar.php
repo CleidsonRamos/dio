@@ -11,21 +11,21 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item dropdown">
-            <a class="nav-link" href="./dashboard.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="material-icons">dashboard</i>
+            <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <i class="material-icons">add_circle</i>
               <p class=" dropdown-toggle">Cadastros</p>
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="#">Cliente</a>
                   <a class="dropdown-item" href="vendas.php">Venda</a>
-                  <a class="dropdown-item" href="#">Usuário</a>
+                  <a class="dropdown-item" href="tabela.php">Usuário</a>
                   <a class="dropdown-item" href="#">Unidade</a>
                   <a class="dropdown-item" href="#">Produto</a>
                   <a class="dropdown-item" href="#">Estoque</a>
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="./user.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="material-icons">monetization_on</i>
               <p class=" dropdown-toggle">Financeiro</p>
             </a>
@@ -35,7 +35,7 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link" href="./tables.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="material-icons">content_paste</i>
               <p class=" dropdown-toggle">Relatórios</p>
             </a>
@@ -62,13 +62,13 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./rtl.html">
+            <a class="nav-link" href="./links.php">
             <i class="material-icons">language</i>
               <p>Links úteis</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./rtl.html">
+            <a class="nav-link" href="./manuais.php">
             <i class="material-icons">auto_stories</i>
               <p>Manuais</p>
             </a>
@@ -79,12 +79,13 @@
               <p>Videos Aulas</p>
             </a>
           </li>
-          <li class="nav-item active-pro ">
+          <!--item no rodapé do sidebar-->
+          <!--<li class="nav-item active-pro ">
             <a class="nav-link" href="./upgrade.html">
               <i class="material-icons">unarchive</i>
               <p>Upgrade to PRO</p>
             </a>
-          </li>
+          </li>-->
         </ul>
       </div>
     </div>
